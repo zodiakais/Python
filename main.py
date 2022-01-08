@@ -1,0 +1,22 @@
+'''
+PROYECTO HECHO CON PYTHON Y MYSQL
+
+-SE ABRE UN ASISTENTE EL CUAL NOS PERMITE LOGEARNOS O REGISTRARNOS.
+-EN CASO DEL REGISTRO SE GUARDARA NOMBRE APELLIDO EMAIL Y CONTRASEÑA.
+-AL LOGEAR MOSTRARA UN APARTADO PARA: CREAR,LISTAR Y BORRAR NOTAS, ADEMAS DE LA OPCION PARA SALIR DE LA APLICACION.
+'''
+from usuarios import acciones
+
+print('''
+      ACCIONES DISPONIBLES:
+      -LOGIN
+      -REGISTRO
+      ''')
+opcion = acciones.Acciones()
+accion = input("ELIGE UNA OPCION: ")
+
+if accion == "REGISTRO":
+    opcion.registro() 
+elif accion == "LOGIN":
+    
+    opcion.login()
