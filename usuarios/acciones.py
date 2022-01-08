@@ -50,10 +50,10 @@ class Acciones:
             self.siguienteAccion(usuario)
         elif accion == "MOSTRAR":
             print("LISTADO DE NOTAS")
-            do.mostrar()
+            do.mostrar(usuario)
             self.siguienteAccion(usuario)
         elif accion == "ELIMINAR":
-            print("QUE NOTA VAS A ELIMINAR:")
+            do.borrar(usuario)
             self.siguienteAccion(usuario)
         elif accion == "SALIR":
             print(f"HASTA PRONTO {usuario[1]}")

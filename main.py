@@ -18,5 +18,4 @@ accion = input("ELIGE UNA OPCION: ")
 if accion == "REGISTRO":
     opcion.registro() 
 elif accion == "LOGIN":
-    
     opcion.login()
